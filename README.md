@@ -11,7 +11,6 @@ Designing this page my idea was, that clicking the picture's story, a visitor wo
 ![Landing](https://user-images.githubusercontent.com/37372229/65076374-883a6080-d9a1-11e9-8a76-cd81cbf6af49.png)
 
 *********************************
-
 ## Gallery page:
 Here I had this cool idea, that the background would be sort of a wooden workbench that pictures are organized upon. When you hover over the pictures you can see them getting pulled visible from underneath other pictures.
 If you click the picture on top left corner you you will enter a modal, that holds a deeper story about the picture.
