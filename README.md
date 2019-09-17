@@ -1,6 +1,6 @@
 # Welcome to Finnscapes Photoblog!
 
-This is a simple photoblog made in my first year of studies in Haaga-Helia using CSS3 and HTML5. No fancy Javasript or anything! It is pretty basic but works just fine! The pictures are taken by me.
+This is a simple photoblog made in my first year of studies in Haaga-Helia using CSS3 and HTML5. No fancy Javasript or anything! ! The pictures are taken by me.
 
 ### You can test the site live on Heroku here:
 https://finnscapes.herokuapp.com/FinnscapesV6.html
