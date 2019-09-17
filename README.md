@@ -18,7 +18,6 @@ If you click the picture on top left corner you you will enter a modal, that hol
 ![gallery](https://user-images.githubusercontent.com/37372229/65076373-883a6080-d9a1-11e9-96fc-bf2277a736b7.png)
 
 *********************************
-
 ## About page:
 Just some personal stuff about the blogger.
 
