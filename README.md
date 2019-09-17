@@ -8,7 +8,7 @@ https://finnscapes.herokuapp.com/FinnscapesV6.html
 ## Landing page:
 Designing this page my idea was, that clicking the picture's story, a visitor would get a brief introduction to the story behind the pic.
 
-![Landing](https://user-images.githubusercontent.com/37372229/65076374-883a6080-d9a1-11e9-8a76-cd81cbf6af49.png)
+![Landing](https://user-images.githubusercontent.com/37372229/65076912-93da5700-d9a2-11e9-8785-0628a792ad81.png)
 
 *********************************
 ## Gallery page:
@@ -20,6 +20,8 @@ If you click the picture on top left corner you you will enter a modal, that hol
 *********************************
 ## About page:
 Just some personal stuff about the blogger.
+
+![About](https://user-images.githubusercontent.com/37372229/65076911-93da5700-d9a2-11e9-8571-354f04f3e753.png)
 
 *********************************
 
