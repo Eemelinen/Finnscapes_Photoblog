@@ -15,5 +15,14 @@ If you click the picture on top left corner you you will enter a modal, that hol
 ## About page:
 Just some personal stuff about the blogger.
 
+*********************************
+
+![Landing](https://user-images.githubusercontent.com/37372229/65076374-883a6080-d9a1-11e9-8a76-cd81cbf6af49.png)
+
+
+*********************************
+
+
+![gallery](https://user-images.githubusercontent.com/37372229/65076373-883a6080-d9a1-11e9-96fc-bf2277a736b7.png)
 
 
