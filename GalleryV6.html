@@ -1,0 +1,161 @@
+<!DOCTYPE html> 
+	
+<html lang="fi">
+    
+    <head>
+
+      <title>Finnscapes</title>
+
+      <meta http-equiv="X-UA-Compatible"   content="IE=edge">
+
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <meta charset="UTF-8">
+
+      <meta name="author" content="Eemeli"> 
+
+      <link href="FinnscapesV6Styles.css" rel="stylesheet"    type="text/css">
+                
+    </head>
+    
+    <body id="galleryPage">
+        
+        <nav class="navflex-container">
+
+            <div id="logoTab">
+
+                <h1 class="flex-item" id="logo">Finnscapes</h1>
+
+            </div>
+
+                <a href="FinnscapesV6.html" class="flex-item"> Main </a>
+
+                <a href="GalleryV6.html" class="flex-item"> Gallery </a>
+
+                <a href="AboutV6.html" class="flex-item"> About </a>
+
+                <a class="icon" onclick="openNav()">&#9776;</a>
+
+        </nav>
+
+        <div id="myNav" class="overlay">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <div class="overlay-content">
+                <a href="FinnscapesV6.html">Main</a>
+                <a href="GalleryV6.html">Gallery</a>
+                <a href="AboutV6.html">About</a>
+              </div>
+        </div>
+        
+        <div id="galleryPush"></div>
+            
+            <div class="row">
+                
+                <div class="column">
+
+                    <img src="Vene-6.jpg" alt="boat" class="degrees1" id="myBtn">
+
+                    <img src="mies-2.jpg" alt="poor man" class="degrees2" id="myBtn2">
+                    <img src="pyora.jpg" alt="man with a bike" class="degrees3">
+                </div>
+                
+                 <div class="column">
+                    
+                    <img src="uimari-2.jpg" alt="swimmer" class="degrees4">
+                    <img src="kengat-2.jpg" alt="shoes" class="degrees5">
+                    <img src="purjevene-2.jpg" alt="sailingboat" class="degrees6"> 
+                </div>
+                
+                 <div class="column">
+                    
+                    <img src="jarvi1-2.jpg" alt="lake" class="degrees7">
+                    <img src="norsu-4.jpg" alt="Ganesh" class="degrees8">
+                    <img src="lammas-2.jpg" alt="sheep" class="degrees9">
+                </div>               
+
+            </div>
+        
+<!-- The Modal -->
+            
+            <div id="myModal" class="modal">
+
+              <!-- Modal content -->
+                
+                  <div class="modal-content">
+                      
+                    <span class="close">&times;</span>
+                      
+                      <div class="modalPic">
+                      
+                    <img src="Vene-6.jpg" alt="boat" class="modalPic">
+                          
+                    </div>
+                        
+                        <h2>Lauantai-ilta Kuhasalossa</h2>
+
+
+                        <p id="modal-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris elementum auctor tortor, ac ornare sapien vestibulum vitae. Vivamus sem nunc, vehicula a quam sed, eleifend sollicitudin lectus. Nam non sollicitudin quam. Nullam egestas... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris elementum auctor tortor, ac ornare sapien vestibulum vitae. Vivamus sem nunc.
+                            
+                        <br><br>
+                            
+                        vehicula a quam sed, eleifend sollicitudin lectus. Nam non sollicitudin quam. Nullam egestas... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris elementum auctor tortor, ac ornare sapien vestibulum vitae. Vivamus sem nunc, vehicula a quam sed, eleifend sollicitudin lectus. Nam non sollicitudin quam. Nullam egestas... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris elementum auctor tortor, ac ornare sapien vestibulum vitae.
+                        <br><br>
+                        vehicula a quam sed, eleifend sollicitudin lectus. Nam non sollicitudin quam. Nullam egestas... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris elementum auctor tortor, ac ornare sapien vestibulum vitae. Vivamus sem nunc, vehicula a quam sed, eleifend sollicitudin lectus. Nam non sollicitudin quam. Nullam egestas... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris elementum auctor tortor, ac ornare sapien vestibulum vitae.
+                        <br><br>     
+                        vehicula a quam sed, eleifend sollicitudin lectus. Nam non sollicitudin quam. Nullam egestas... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris elementum auctor tortor, ac ornare sapien vestibulum vitae. Vivamus sem nunc, vehicula a quam sed, eleifend sollicitudin lectus. Nam non sollicitudin quam. Nullam egestas... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris elementum auctor tortor, ac ornare sapien vestibulum vitae.
+                        <br><br>
+                        vehicula a quam sed, eleifend sollicitudin lectus. Nam non sollicitudin quam. Nullam egestas... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris elementum auctor tortor, ac ornare sapien vestibulum vitae. Vivamus sem nunc, vehicula a quam sed, eleifend sollicitudin lectus. Nam non sollicitudin quam. Nullam egestas... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris elementum auctor tortor, ac ornare sapien vestibulum vitae.                        
+                      </p>
+
+                  </div>
+
+            </div>    
+        
+        
+    <script>
+        
+        // MOBILE MENU BUTTON:
+            
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+        
+                    
+/* MODAL WINDOW FOR PICTURE ARTICLES */
+
+        // Get the modal
+        var modal = document.getElementById('myModal');
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+    </script>
+    
+    </body>
+
+
+</html>

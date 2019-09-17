@@ -1,0 +1,126 @@
+<!DOCTYPE html> 
+	
+<html lang="fi">
+    
+    <head>
+
+      <title>Finnscapes</title>
+
+      <meta http-equiv="X-UA-Compatible"   content="IE=edge">
+
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <meta charset="UTF-8">
+
+      <meta name="author" content="Eemeli">
+
+      <link href="FinnscapesV6Styles.css" rel="stylesheet"    type="text/css">
+        
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    </head>
+
+    <body class="mainPage">
+
+        <nav class="navflex-container">
+
+            <div id="logoTab">
+
+                <h1 class="flex-item" id="logo">Finnscapes</h1>
+
+            </div>
+
+                <a href="FinnscapesV6.html" class="flex-item"> Main </a>
+
+                <a href="GalleryV6.html" class="flex-item"> Gallery </a>
+
+                <a href="AboutV6.html" class="flex-item"> About </a>
+
+                <a class="icon" onclick="openNav()">&#9776;</a>
+
+        </nav>
+
+        <div id="myNav" class="overlay">
+
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+              <div class="overlay-content">
+                <a href="FinnscapesV6.html">Main</a>
+                <a href="GalleryV6.html">Gallery</a>
+                <a href="AboutV6.html">About</a>
+              </div>
+
+        </div>
+        
+        <section id="flex-main">
+            
+            <div id="main-push-div"></div>
+            
+
+            <div id="text-container">
+                
+                <button id="main-page-button">Picture's story</button>
+
+                <div id="text-div">
+                    
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris elementum auctor tortor, ac ornare sapien vestibulum vitae. Vivamus sem nunc, vehicula a quam sed, eleifend sollicitudin lectus. Nam non sollicitudin quam. non sollicitudin quam...</p>
+                
+                </div>
+            
+            </div>
+        
+        </section>
+        
+    <script>
+    
+    /* NavButton */
+        
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+    }
+        
+        
+        
+        /*
+        
+        var i = 0;
+
+        var txt = ' Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris elementum auctor tortor, ac ornare sapien vestibulum vitae. Vivamus sem nunc, vehicula a quam sed, eleifend sollicitudin lectus. Nam non sollicitudin quam. non sollicitudin quam...';
+
+        var speed = 20;
+
+        function typeWriter() {
+
+          if (i < txt.length) {
+
+            document.getElementById("text-div").innerHTML += txt.charAt(i);
+            i++;
+
+            setTimeout(typeWriter, speed);   
+          }
+        }
+        
+        */
+        
+        $("#main-page-button").click(function() {
+            
+            if ($("#text-div").css("display") == "none") {
+                
+                $("#text-div").fadeIn(1000);
+            
+            } else {
+                
+                $("#text-div").fadeOut(1000);
+            };
+            
+        });
+        
+        
+    </script>
+ 
+    
+    </body>

@@ -1,0 +1,111 @@
+<!DOCTYPE html> 
+	
+<html lang="fi">
+    
+    <head>
+
+      <title>Finnscapes</title>
+
+      <meta http-equiv="X-UA-Compatible"   content="IE=edge">
+
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <meta charset="UTF-8">
+
+      <meta name="author" content="Eemeli"> 
+
+      <link href="FinnscapesV6Styles.css" rel="stylesheet"    type="text/css">
+        
+    </head>
+    
+    <body id="aboutPage">
+        
+        <nav class="navflex-container">
+
+            <div id="logoTab">
+
+                <h1 class="flex-item" id="logo">Finnscapes</h1>
+
+            </div>
+
+                <a href="FinnscapesV6.html" class="flex-item"> Main </a>
+
+                <a href="GalleryV6.html" class="flex-item"> Gallery </a>
+
+                <a href="AboutV6.html" class="flex-item"> About </a>
+
+                <a class="icon" onclick="openNav()">&#9776;</a>
+
+        </nav>
+
+        <div id="myNav" class="overlay">
+
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+              <div class="overlay-content">
+                <a href="FinnscapesV6.html">Main</a>
+                <a href="GalleryV6.html">Gallery</a>
+                <a href="AboutV6.html">About</a>
+              </div>
+
+        </div>
+        
+        <section class="about-flex">
+            
+            <div class="about-item"></div>
+            
+            <div class="about-item">
+                
+            <div id="about-push-div"></div>
+                
+                <div id="introduction">
+                    
+                    <h2>Our Story</h2>
+                
+                    <p id="introduction-paragraph">
+
+                        Finnscapes started out as a one man project in early 2018.
+                        <br><br>    
+                        Long term goal of Finnscapes is to promote our country’s lifestyle and nature. While at the same time supporting local artistry. Photographers whose works you find on this site present their unique view of Finland each in their own way.
+                        <br><br>    
+                        For one the serene beauty of this country might lie hidden on vast northern taiga.
+                        <br><br> 
+                        Some might find it from urban streets of Helsinki.
+                        <br><br> 
+                        Or maybe the pristine Finnish moment can only be experienced somewhere in the middle of forest, where sauna stays warm trough most of the day and your biggest choice is between your favourite fishing rods.
+                        <br><br> 
+                        Our aim is to find and bring together fresh and modern views of Finland, so we can share the beauty of this country with the rest of the world. If you are a photographer beautiful frames and stories to share, we would love to add those to our gallery.
+                        <br><br> 
+                        We look forward to working with you.
+                        <br><br> 
+                        Contact us at:
+                        <br><br> 
+                        photographers@finnscapes.fi
+                
+                    </p>
+                    
+                </div>
+                
+            </div>
+            
+        </section>
+        
+        
+        
+        <script>
+            
+/* NavButton */
+
+            function openNav() {
+                document.getElementById("myNav").style.width = "100%";
+            }
+
+            function closeNav() {
+                document.getElementById("myNav").style.width = "0%";
+            }
+
+        </script>
+    
+    </body>
+    
+</html>

@@ -1,0 +1,508 @@
+        body, html {
+            margin: 0;
+            height: 100%;
+            font-family: garamond, sans-serif, fantasy;
+            color: white;
+        }
+
+/* NAVBAR */
+
+        .navflex-container {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            font-family: garamond, sans-serif, fantasy;
+        }
+
+        .flex-item {
+            padding-right: 25px;
+            font-size: 20px;
+
+        }
+
+        .icon {
+            display: none;
+        }
+
+        #logoTab {
+
+            flex-basis: 50%;
+        }
+
+        #logo {
+
+            width:137px;
+            margin-left: 8px;
+            padding:3px;
+            border-bottom: 1px solid white;
+            border-top: 1px solid white;
+            font-size: 28px;
+            font-family: garamond, sans-serif, fantasy;
+            cursor: default;
+        }
+
+        #logo:hover {
+            text-shadow: 2px 2px 10px #ea1b1b;
+            transition: 0.5s;
+        }
+
+        a:link {
+
+            color: white;
+            text-decoration: none;
+        }
+
+        a:visited {
+
+            color: white;
+        }
+
+        a:hover {
+
+            text-shadow: 2px 2px 10px #ea1b1b;
+        }
+
+        @media only screen and (min-width: 768px) {
+            #myNav {
+            display: none;
+            }
+        }
+
+    @media only screen and (max-width: 768px) {
+
+        .navflex-container a:not(:first-child) {
+            display: none;
+        }
+
+        .navflex-container a.icon {
+            display: block;
+            margin-right: 25px;
+            cursor:pointer;
+        }
+        
+        /*  The Overlay (background) */
+
+        .overlay {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0, 0.9);
+            overflow-x: hidden;
+            transition: 0.5s;
+        }
+
+        .overlay-content {
+            position: relative;
+            top: 25%;
+            width: 100%;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .overlay a {
+            padding: 8px;
+            text-decoration: none;
+            font-size: 36px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .overlay a:hover, .overlay a:focus {
+            color: #f1f1f1;
+        }
+
+        .overlay .closebtn {
+            position: absolute;
+            top: 20px;
+            right: 45px;
+            font-size: 60px;
+        }
+    }
+
+/* MAIN PAGE */
+
+        .mainPage {
+            background-image: url(norsu-4.jpg);
+            height: 100%;
+            background-position: top;
+            background-repeat: no-repeat;
+            background-color: black;
+            background-size: cover;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .mainPage {
+                background-image: url(norsu-4-mobile.jpg);
+                background-position: center;
+            }            
+        }
+
+        .flex-main {
+            display:flex;
+            background-color: red;
+        }
+
+        #main-push-div {
+            height: 350px;
+        }
+
+        #text-container {
+            padding-left: 30px;
+            
+        }
+
+        #main-page-button {
+            font-family: garamond, sans-serif, fantasy;
+            background-color:transparent;
+            border:none;
+            border-bottom: 2px solid rgba(128, 128, 128, 0.51);
+            cursor:pointer;
+            overflow: hidden;
+            outline:none;
+            color: #ffffff;
+            font-size: 34px;
+            opacity: 0;
+            animation: fadeIn 2s ease-in-out 1s forwards;
+        }
+
+        @keyframes fadeIn {
+
+            0% {
+                opacity: 0;
+            } 100% {
+                opacity: 0.9;
+            }
+        }
+
+        #main-page-button:hover {
+
+            text-shadow: 2px 2px 10px #ea1b1b;
+            transition: 0.5s;
+
+        }
+
+
+        #text-div {
+            width: 400px;
+            font-size: 26px;
+            padding-top: 0px;
+            padding-left: 30px;
+            display: none;
+            cursor: default;
+        }
+        
+
+        @media only screen and (max-width: 768px) {
+            #text-div {
+            width: 280px;
+            font-size: 20px;
+            }
+            
+            #main-push-div {
+                height: 300px;
+            }
+        }
+
+        @media only screen and (min-width: 1920px) {  
+            
+            #main-push-div {
+                height: 400px;
+            }
+            
+            #text-container {
+                width: 450px;
+                margin-left: 30px;
+            }
+        }
+
+/* ABOUT PAGE */
+
+        #aboutPage {
+            background-image: url(heinamies-3.jpg);
+            background-repeat: no-repeat;
+            background-color: black;
+            height: 100%;
+            background-position: center;
+            background-size: cover;
+            font-family: garamond, sans-serif, fantasy;
+            color: white;
+        }
+
+        @media only screen and (max-width: 768px) {
+            #aboutPage {
+                background-image: url(heinamies-mobile.jpg);
+                background-position: left;
+            }
+        }
+
+
+        .about-flex { 
+            display: flex;
+        }
+
+        .about-item {
+            flex-direction: row-reverse;
+            width: 50%;
+        }
+
+
+        #introduction {
+            color:#ffffff;
+            font-size: 20px;
+            padding: 10px 10px 10px 10px;
+            text-shadow: 2px 2px 10px rgba(255, 4, 4, 0.46);
+            background-color: rgba(0, 0, 0, 0.29);
+            text-align: center;
+            cursor: default;
+            
+        }
+
+        #introduction:hover {
+            
+            text-shadow: 2px 2px 10px rgb(255, 4, 4);
+            transition: 2s;
+        }
+
+        #aboutNavBackground {
+            
+            background-color: rgba(0, 0, 0, 0.51);
+            color: white;
+
+        }
+
+        @media only screen and (min-width: 1920px) {
+            #about-push-div {
+                height: 150px;  
+            } 
+        }
+
+        @media only screen and (max-width: 768px) {
+           .about-flex { 
+            display: block;
+            }
+        
+            .about-item {
+                width:inherit;
+            }
+            
+            #introduction {
+                padding-bottom: 25px;
+                background-color: rgba(0, 0, 0, 0.22);
+            }
+        }
+
+        @media only screen and (max-width: 420px) {
+            
+            #about-push-div {
+                height: 340px;
+            }
+        }
+
+/* GALLERY */
+
+        #galleryPage {
+
+            background-image: url(galleryBackground-2.jpg);
+            height: 100%;
+            background-position: center;
+            background-size: cover;
+            font-family: garamond, sans-serif, fantasy;
+        }
+
+        img {
+            cursor: pointer;
+        }
+
+        img:hover {
+            animation: move 2s forwards;
+            
+            /* When the animation is finished, start again */
+        }
+
+        @keyframes move {
+            
+            100% { transform: translate(1px, -30px); }
+
+        } 
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 4px;
+        }
+
+        #galleryPush {
+            height: 20px;
+    
+        }
+
+        .column {
+            flex: 25%;
+            padding: 0 4px;
+            margin-left: 25px;            
+        }
+
+        .column img {
+            
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 2), 0 6px 20px 0 rgba(0, 0, 0, 2);
+            border: 7px solid transparent;
+            margin-top: 2px;
+            border:6px solid rgb(237, 231, 225);
+            vertical-align: middle;
+        }
+        @media only screen and (max-width: 420px) {
+            .column {
+                flex: 50%;
+                padding: 0 4px;
+                margin-left: 20px;            
+            }
+        }
+        @media only screen and (min-width: 668px) {
+            .column {
+                flex: 33%;
+                padding: 0 4px;
+                margin-left: 20px;            
+            }
+        }
+
+        @media only screen and (min-width: 770px) {
+            .column {    
+            flex: 25%;
+            }
+        }
+
+        .degrees1 {
+            transform: rotate(5deg);
+            max-width: 90%;
+        }
+        .degrees2 {
+            transform: rotate(-8deg);
+            max-width: 90%;
+        }
+        .degrees3 {
+            transform: rotate(13deg);
+            max-width: 90%;
+
+        }
+        .degrees4 {
+            transform: rotate(-10deg);
+            max-width: 90%;
+        }
+        .degrees5 {
+            transform: rotate(7deg);
+            max-width: 90%
+        }
+        .degrees6 {
+            transform: rotate(1deg);
+            max-width: 90%;
+
+        }
+        .degrees7 {
+            transform: rotate(-3deg);
+            max-width: 90%;            
+        }
+        .degrees8 {
+            transform: rotate(-1deg);
+            max-width: 90%;
+
+        }
+        .degrees9 {
+            transform: rotate(-8deg);
+            max-width: 90%;
+
+        }
+
+        /* Modal Content -- For now there is a modal window only for the picture in the top left corner. There will be similar window for each of the pictures. */
+
+        #myModal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            padding-top: 0px; /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow:scroll; /* Enable scroll if needed */
+            /*background-color: rgba(0, 0, 0, 0.45); /* Fallback color */
+            /* background-color: rgba(0, 0, 0, 0); /* Black w/ opacity */
+            font-family: garamond, sans-serif, fantasy;
+            text-align: center;
+            transition: opacity 400ms ease-in;
+
+        }
+        
+        .modal-content {
+            background-color: rgba(5, 5, 5, 0.87);
+            margin: auto;
+            padding-bottom:40px;
+        }
+
+        .modalPic {
+            cursor: default;
+            padding-top: 20px;
+            padding-bottom: 10px;
+            animation: none !important;
+            margin: auto;
+            width: 70%;
+        }
+        
+
+        #modal-text {
+            padding-top: 20px;
+            cursor: default;
+            text-align:center;
+            margin:auto;
+            width: 40%;
+            padding-bottom: 20px;
+        }
+
+        @media only screen and (max-width: 768px) {
+            #modal-text {
+                width: 60%;
+            }
+        }
+
+        /* The Close Button */
+        .close {
+            padding-top: 20px;
+            color: #e3e3e3;
+            float: right;
+            font-size: 60px;
+            font-weight: bold;
+            padding-right: 15px;
+        }
+
+        .close:hover,
+        .close:focus {
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 4px;
+        }
+
+
+
+
+
+
+
+
+
+
+    
+
