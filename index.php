@@ -1,1 +1,1 @@
-<?php include_once("Finnscapes.html"); ?>
+<?php include_once("index.html"); ?>
