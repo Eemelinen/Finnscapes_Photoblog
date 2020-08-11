@@ -130,7 +130,7 @@
 /* MAIN PAGE */
 
         .mainPage {
-            background-image: url(norsu-4.jpg);
+            background-image: url(./static/norsu-4.jpg);
             height: 100%;
             background-position: top;
             background-repeat: no-repeat;
@@ -140,7 +140,7 @@
 
         @media only screen and (max-width: 768px) {
             .mainPage {
-                background-image: url(norsu-4-mobile.jpg);
+                background-image: url(./static/norsu-4-mobile.jpg);
                 background-position: center;
             }            
         }
@@ -226,7 +226,7 @@
 /* ABOUT PAGE */
 
         #aboutPage {
-            background-image: url(heinamies-3.jpg);
+            background-image: url(./static/heinamies-3.jpg);
             background-repeat: no-repeat;
             background-color: black;
             height: 100%;
@@ -238,7 +238,7 @@
 
         @media only screen and (max-width: 768px) {
             #aboutPage {
-                background-image: url(heinamies-mobile.jpg);
+                background-image: url(./static/heinamies-mobile.jpg);
                 background-position: left;
             }
         }
@@ -310,7 +310,7 @@
 
         #galleryPage {
 
-            background-image: url(galleryBackground-2.jpg);
+            background-image: url(./static/galleryBackground-2.jpg);
             height: 100%;
             background-position: center;
             background-size: cover;

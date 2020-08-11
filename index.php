@@ -1,1 +1,1 @@
-<?php include_once("FinnscapesV6.html"); ?>
+<?php include_once("Finnscapes.html"); ?>

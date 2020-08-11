@@ -14,7 +14,7 @@
 
       <meta name="author" content="Eemeli">
 
-      <link href="FinnscapesV6Styles.css" rel="stylesheet"    type="text/css">
+      <link href="styles.css" rel="stylesheet"    type="text/css">
         
        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
@@ -32,9 +32,9 @@
 
                 <a href="index.html" class="flex-item"> Main </a>
 
-                <a href="GalleryV6.html" class="flex-item"> Gallery </a>
+                <a href="gallery.html" class="flex-item"> Gallery </a>
 
-                <a href="AboutV6.html" class="flex-item"> About </a>
+                <a href="about.html" class="flex-item"> About </a>
 
                 <a class="icon" onclick="openNav()">&#9776;</a>
 
@@ -46,8 +46,8 @@
 
               <div class="overlay-content">
                 <a href="index.html">Main</a>
-                <a href="GalleryV6.html">Gallery</a>
-                <a href="AboutV6.html">About</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="about.html">About</a>
               </div>
 
         </div>
@@ -82,42 +82,19 @@
         function closeNav() {
             document.getElementById("myNav").style.width = "0%";
     }
+    
+    $("#main-page-button").click(function() {
         
-        
-        
-        /*
-        
-        var i = 0;
-
-        var txt = ' Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris elementum auctor tortor, ac ornare sapien vestibulum vitae. Vivamus sem nunc, vehicula a quam sed, eleifend sollicitudin lectus. Nam non sollicitudin quam. non sollicitudin quam...';
-
-        var speed = 20;
-
-        function typeWriter() {
-
-          if (i < txt.length) {
-
-            document.getElementById("text-div").innerHTML += txt.charAt(i);
-            i++;
-
-            setTimeout(typeWriter, speed);   
-          }
-        }
-        
-        */
-        
-        $("#main-page-button").click(function() {
+        if ($("#text-div").css("display") == "none") {
             
-            if ($("#text-div").css("display") == "none") {
-                
-                $("#text-div").fadeIn(1000);
+            $("#text-div").fadeIn(1000);
+        
+        } else {
             
-            } else {
-                
-                $("#text-div").fadeOut(1000);
-            };
-            
-        });
+            $("#text-div").fadeOut(1000);
+        };
+        
+    });
         
         
     </script>
