@@ -19,7 +19,7 @@ If you click the picture on top left corner you you will enter a modal, that hol
 
 *********************************
 ## About page:
-Just some personal stuff about the blogger.
+Personal introduction of the blogger.
 
 ![About](https://user-images.githubusercontent.com/37372229/65076911-93da5700-d9a2-11e9-8571-354f04f3e753.png)
 
